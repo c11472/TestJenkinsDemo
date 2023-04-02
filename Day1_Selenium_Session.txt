@@ -1,0 +1,236 @@
+Day-1 Content 
+______________________________________________
+
+1. why we think about automation ?
+
+   * Regression Testing   [Repitions ]
+   * Data base testing
+
+
+
+Testcase --> Test script 
+ 
+
+ Selenium WebDriver 
+ QTP UFT
+ 
+
+   QTP UFT : Microfocus product : paid
+   vb scripts
+   
+   Environment linitations
+
+  Selenium: Test automation suite
+
+  Components :
+     Selenium IDE
+     Selenium WebDriver[90%]
+     Selenium Grid
+  Compatibility features :
+    a. Java , C# , Ruby , Java Script , Python
+  OS :
+   Windows , linux , Mac..
+  Parallel Testing ---- Using Grid /TestNG
+
+  [Open source]
+
+ Test Environment <---- 
+
+
+
+________________________________________________
+
+[Selenium Grid] HUB & NODES
+
+Script :
+   [Perform login using gmail]  <------ TC01.java <------ Single browser 
+
+HUB <----- [browsers] ----- 
+Server<---
+   C1<---- TC01.java in IE
+   c2<---- TC01.java ff
+   c3 <---- TC01.java edge
+
+Driver [c1,c2,c3]
+
+
+1. Regression 
+2. No of iterations can be managed easilly in automation [Parameterization]
+
+
+[Selenium WebDriver 4.4.0]  
+
+
+How to add the seconday jars in java project ?
+
+_________________________________________________________
+
+How can we create a maven project ?
+
+Test case ----> Conver the same to script 
+
+
+Script : different browser
+
+Driver.exe
+
+FirefoxBrowser --- geckodriver.exe
+Chrome  ------chromedriver.exe
+IE --- IEDriver.exe
+
+
+Testcase001: 
+_________________________________________________________________
+Step-1:
+Invoke opencart using the url "https://demo.opencart.com/"
+Step-2:
+Click on "My Account"   [ok] Locator
+Step-3:
+Click on Login
+Step-4:
+Enter the email address
+Step-5:
+Enter the password
+Step-6:
+Click on Login
+
+
+
+
+Locators :
+
+The automation code can identify the web elemnt through locators.
+
+
+
+1. Xpath
+2. Css Selector
+3. id
+4. name
+5. LinkTest
+6. PartialLinkTest
+7. TagName
+
+
+
+Dynamic WebElement :
+
+
+
+
+____________________________________
+
+
+/html/body/nav/div[2]/div[2]/ul/li[2]/div/a/span
+
+[16:46] Gayatri (Guest)
+org.openqa.selenium.InvalidSelectorException [" "]
+
+
+org.openqa.selenium.NoSuchElementException
+
+
+
+
+[Xpath]
+
+Types :
+
+    Relative
+    1. Starts from //
+    Example : //*[@id="input-email"]
+    2. It will directly access the element inside dom instead of searching from root tag.
+    3. Easy to construct the relative
+    4. Faster 
+  
+    Absolute
+    1. Starts with /
+    2. Contains the list of tags from the root tag till resultant element's tag
+    Example : /html/body/nav/div[2]/div[2]/ul/li[2]/div/a/span
+
+    /html/body/nav/div[2]/div[2]/ul/li[2]/div/a/span
+     
+    3. Difficult to construct the correct absolute xpath
+    4. Time consuming 
+
+TagNames in HTML DOM :
+
+<html></html>
+<body></body>
+<div></div>
+<span></span>
+<table></table>
+<img></img>
+<select></select>
+<frame></frame>
+<radio></radio>
+<button></button>
+
+
+
+
+Attributes & Values
+
+Attributes     Values
+input          input-email
+class          form-control
+type           text
+name           email
+value          ""   
+placeholder    E-Mail Address
+
+
+
+No one will copy the xpath / locator.
+
+
+
+
+
+What is Dynamic WebElement 
+
+Values will be changed i next execution...copied xpath will not work .[Dynamic Xpath]
+
+
+How can we write our own Xpath ?
+
+Relative Xpath
+
+//TagName[@attributeName="value"]
+
+Using contains & text:
+
+//tagName[contains(text( ),"textval")]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+  
